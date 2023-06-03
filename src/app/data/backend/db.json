@@ -1,0 +1,48 @@
+{
+  "users":[
+    {
+      "id": 1,
+      "name": "Sebastian Leon",
+      "age": 22,
+      "description": "FrontEnd",
+      "avatar": "https://img.freepik.com/vector-premium/perfil-hombre-dibujos-animados_18591-58484.jpg?w=2000"
+    },
+    {
+      "id": 2,
+      "name": "Carlos Enrrique",
+      "age": 27,
+      "description": "Backend",
+      "avatar": "https://img.freepik.com/vector-premium/perfil-hombre-dibujos-animados_18591-58482.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Laura Daniela ",
+      "age": 18,
+      "description": "nada",
+      "avatar": "https://img.freepik.com/vector-premium/dibujos-animados-perfil-mujer_18591-58476.jpg"
+    }
+  ],
+  "Ventas":[
+    {
+      "id":1,
+      "name": "Carro",
+      "img": "",
+      "info": "Carro en perfecto estado, nunca reparado, tiene sus 4 llantas y prende"
+
+    },
+    {
+      "id":2,
+      "name": " Moto",
+      "img": "",
+      "info": "moto en perfecto estado, nunca reparado, tiene sus 2 llantas y prende"
+
+    },
+    {
+      "id":2,
+      "name": " Xbox",
+      "img": "",
+      "info": "Tiene 32 juegos y 2 controles en perfecto estado "
+
+    }
+  ]
+}
