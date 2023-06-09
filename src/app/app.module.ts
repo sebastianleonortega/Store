@@ -13,6 +13,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { UserModule } from '@modules/user/user.module';
 import { VentasModule } from '@modules/ventas/ventas.module';
 import { CarruselModule } from '@modules/carrusel/carrusel.module';
+import { ProductComponent } from '@modules/product/pages/Product/product.component';
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -20,7 +22,7 @@ import { CarruselModule } from '@modules/carrusel/carrusel.module';
     AppComponent,
     MainComponent,
     FooterComponent,
-    NavigationComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,7 @@ import { CarruselModule } from '@modules/carrusel/carrusel.module';
     UserModule,
     VentasModule,
     CarruselModule,
-
+    FormsModule,
 
 
   ],

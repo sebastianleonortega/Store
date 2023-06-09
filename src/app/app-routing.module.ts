@@ -24,16 +24,23 @@ const routes: Routes = [
     },
     {
       path: 'ventas',
-      loadChildren: ()=>
-      import ('@modules/ventas/ventas.module').then( (m) => m.VentasModule)
+      loadChildren: ()=> import ('@modules/ventas/ventas.module').then( (m) => m.VentasModule)
     },
+
+      {
+        path:'product',
+        loadChildren: ()=> import('@modules/product/pages/product.module').then( (m)=> m.ProductModule)
+      },
     {
       path: '**',
       redirectTo: 'panel/user',
       pathMatch: 'full'
     },
 
-  ]
+
+
+
+    ]
 
 },
 {
