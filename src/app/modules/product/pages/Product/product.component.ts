@@ -10,23 +10,23 @@ import {ProductService} from "@modules/product/product-service/product.service";
 export class ProductComponent implements  OnInit{
 
   product: InterfaceProduct[]=[];
+
   constructor(
     private productService: ProductService,
   ) {
   }
 
-ngOnInit(): {
-
+ngOnInit() {
 }
 
-    getProducts(){
-      this.productService.getAllProduct().subscribe({
-        next: (r) => {
-          this.product = r;
-        }
-      })
-    }
-
+getProduct(){
+    this.productService.getAllProduct().subscribe({
+      next: (r) => {
+        this.product = r;
+        console.log( "siu" +this.product);
+      }
+    })
+}
 
 }
 
