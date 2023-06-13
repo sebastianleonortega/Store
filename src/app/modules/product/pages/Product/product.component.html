@@ -1,12 +1,22 @@
 <div class="Container">
   <h1>Productos: </h1>
-  <div>
+  <div class="product">
 
     <ng-container *ngFor="let item of product">
-      <h2>{{item.productName}}</h2>
+
+        <div class="listProduct" >
+          <div class="product-img">
+            <img src="" alt="">
+          </div>
+          <div class="product-info">
+            <h2>{{item.productName}}</h2>
+            <h4>Precio: {{item.priceSale}}</h4>
+            <P>{{item.barCode}}</P>
+          </div>
+        </div>
 
     </ng-container>
-    <button class="btn btn-primary" (click)="getProduct()">All</button>
 
   </div>
+  <button class="btn btn-primary" (click)="getProduct()">All</button>
 </div>
