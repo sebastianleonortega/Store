@@ -1,4 +1,5 @@
 export interface InterfaceProduct{
+  idProduct: number;
   productName: string;
   idCategory: string;
   barCode: string;

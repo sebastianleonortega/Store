@@ -1,12 +1,25 @@
-<div class="Container">
-  <h1>Productos: </h1>
-  <div>
+<div class="content">
+  <div class="content-title">
+    <h1>Productos</h1>
+  </div>
 
-    <ng-container *ngFor="let item of product">
-      <h2>{{item.productName}}</h2>
-
-    </ng-container>
-    <button class="btn btn-primary" (click)="getProduct()">All</button>
+    <div class="product" *ngFor="let item of product">
+      <div class="cards-product">
+        <div class="product-img">
+          <img src="assets/705445.jpg" alt="">
+        </div>
+        <div class="product-name">
+          <h2>{{item.productName}}</h2>
+        </div>
+        <div class="information">
+          <div class="product-price">
+            <span>${{item.priceSale}}</span>
+          </div>
+          <div class="quantity">
+            <span>{{item.quantityStock}}</span>
+          </div>
+        </div>
+    </div>
 
   </div>
 </div>
