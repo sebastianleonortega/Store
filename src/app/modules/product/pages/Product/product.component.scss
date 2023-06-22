@@ -1,20 +1,19 @@
 .content{
 
   .content-title{
+
     display: flex;
     justify-content: center;
-    align-items: center;
   }
   .product{
     display: flex;
+    justify-content: center;
 
     .cards-product{
       margin: 10px;
       padding: 10px;
       border: 1px solid #b48989;
       border-radius: 20px;
-      width: 200px;
-      height: 250px;
       transition: 0.5s all ease-in-out;
 
       .product-img{
