@@ -1,24 +1,26 @@
-.content-dashboard{
-  .das-cards{
+.das-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .das-card {
+    border: 1px solid red;
+    height: 200px;
+    text-align: center;
+    margin: 1%;
+    position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    .das-card{
-      position: relative;
-      margin: 1%;
-      width: 40%;
-      height: 200px;
-      border: 1px solid black;
-    }
+    width: 45%;
   }
 }
-@media (max-width: 760px) {
-  .das-cards{
+
+@media (max-width: 768px) {
+  .das-cards {
     flex-direction: column;
-  }
-  .das-card{
-    width: 300px;
-    padding: 1px;
+    margin-right: 2%;
+
+    .das-card {
+      width: 100%;
+    }
   }
 }
