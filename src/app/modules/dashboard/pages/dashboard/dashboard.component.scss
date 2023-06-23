@@ -1,0 +1,24 @@
+.content-dashboard{
+  .das-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .das-card{
+      position: relative;
+      margin: 1%;
+      width: 40%;
+      height: 200px;
+      border: 1px solid black;
+    }
+  }
+}
+@media (max-width: 760px) {
+  .das-cards{
+    flex-direction: column;
+  }
+  .das-card{
+    width: 300px;
+    padding: 1px;
+  }
+}
