@@ -9,14 +9,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { UserModule } from '@modules/user/user.module';
 import { CarruselModule } from '@modules/carrusel/carrusel.module';
 import {FormsModule} from "@angular/forms";
-import {ProductModule} from "@modules/product/product.module";
 import {MainComponent} from "@layout/main/main.component";
 import {FooterComponent} from "@layout/footer/footer.component";
 import {NavigationComponent} from "@layout/navigation/navigation.component";
 import {CoreModule} from "@core/core.module";
 import {SharedModule} from "@shared/shared.module";
-import { LandingPageComponent } from './layout/landing-page/landing-page.component';
-import {CategoryModule} from "@modules/category/category.module";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -25,7 +23,6 @@ import {CategoryModule} from "@modules/category/category.module";
     MainComponent,
     FooterComponent,
     NavigationComponent,
-    LandingPageComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,9 +34,8 @@ import {CategoryModule} from "@modules/category/category.module";
     // Modules
     UserModule,
     CarruselModule,
-    ProductModule,
     SharedModule,
-    CategoryModule
+    BrowserAnimationsModule,
   ],
   providers: [
     {

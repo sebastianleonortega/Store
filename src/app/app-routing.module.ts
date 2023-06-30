@@ -1,33 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MainComponent } from '@layout/main/main.component';
-import {LandingPageComponent} from "@layout/landing-page/landing-page.component";
 
 const routes: Routes = [
   {
     path: '',
-    component: LandingPageComponent,
-  },
-  {
-    path: 'auth',
-    loadChildren: () => import('@modules/auth/auth.module').then((m)=> m.AuthModule)
+    component: MainComponent,
   },
   {
     path: 'app',
     component: MainComponent,
     children: [
-      {
-        path: '',
-        loadChildren: ()=> import('@modules/dashboard/dashboard.module').then( (m) => m.DashboardModule)
-      },
-      {
-        path:'product',
-        loadChildren: ()=> import('@modules/product/product.module').then( (m)=> m.ProductModule)
-      },
-      {
-        path: 'category',
-        loadChildren: ()=> import('@modules/category/category.module').then((m)=> m.CategoryModule)
-      },
+
+
       {
         path: 'user',
         loadChildren: () =>

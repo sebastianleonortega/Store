@@ -7,7 +7,7 @@ import { RouterModule } from '@angular/router';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [  ],
   imports: [
     CommonModule,
     FormsModule,
@@ -22,7 +22,7 @@ import { RouterModule } from '@angular/router';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    RouterModule
+    RouterModule,
 
   ]
 })

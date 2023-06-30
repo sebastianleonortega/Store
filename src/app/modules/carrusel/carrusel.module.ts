@@ -8,6 +8,9 @@ import {CarruselRoutingModule} from '../carrusel/carrusel.routing.module'
   declarations: [
     CarruselComponent
   ],
+  exports: [
+    CarruselComponent
+  ],
   imports: [
     CarruselRoutingModule,
     SharedModule

@@ -1,11 +1,9 @@
-// //import componentes
+import {CarruselProductComponent} from "@shared/components/carrusel-product/carrusel-product.component";
 
-// // import { CardUserComponent } from "./components/cards/card-user/card-user.component";
 
-// export const component: any[]=[
-//   // CardUserComponent
-// ]
+export const components: any[]= [
 
-// //expor all component
+  CarruselProductComponent,
+];
 
-// export * from "./components/cards/card-user/card-user.component";
+export * from './components/carrusel-product/carrusel-product.component'
